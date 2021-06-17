@@ -19,7 +19,7 @@
 				<h1><i class="fas fa-smile"></i> Chatroom</h1>
 			</header>
 			<main class="join-main">
-				<form action="chat.ejs">
+				<form method="post" action="/register">
 					<div class="form-control">
 						<label for="username">Username</label>
 						<input
@@ -33,7 +33,7 @@
 					<div class="form-control">
 						<label for="password">Password</label>
 						<input
-								type="text"
+								type="password"
 								name="password"
 								id="password"
 								placeholder="Enter password..."
@@ -41,16 +41,16 @@
 						/>
 					</div>
 					<div class="form-control">
-						<label for="confirm-password">Confirm Password</label>
+						<label for="confirm_password">Confirm Password</label>
 						<input
-								type="text"
-								name="confirm-password"
-								id="confirm-password"
+								type="password"
+								name="confirm_password"
+								id="confirm_password"
 								placeholder="Confirm your password..."
 								required
 						/>
 					</div>
-					Already have an account? <a href="/index.html">Login here!</a>
+					Already have an account? <a href="/">Login here!</a>
 					<button type="submit" class="btn">Join Chat</button>
 				</form>
 			</main>
